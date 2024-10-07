@@ -12,3 +12,14 @@ class Product{
     }
 }
 
+class ProductAmount{
+    currentAmount:number;
+    maxAmount=1000;
+
+    constructor(currentAmount: number)
+    {
+        this.currentAmount=currentAmount;
+    }
+}
+
+
