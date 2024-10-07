@@ -20,5 +20,9 @@ class Product{
     changePrice(newPrice:number){
         this.price=newPrice;
     }
+
+    discount(discount:number){
+        this.price=this.price-discount*this.price;
+    }
 }
 
