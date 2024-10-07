@@ -22,7 +22,7 @@ class Product{
     }
 
     discount(discount:number){
-        this.price=this.price-discount*this.price;
+        this.price=this.price-discount*this.price+0.2;
     }
 }
 
