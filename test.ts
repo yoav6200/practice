@@ -2,24 +2,23 @@ const BASE=50;
 
 class Product{
     name: string;
-    cost: number;
+    price=BASE;
     isAvailable: boolean
 
-    constructor(name:string,cost:number){
+    constructor(name:string,price:number){
         this.name=name;
-        this.cost=cost;
+        this.price=price;
         this.isAvailable=true;
     }
-}
 
-class ProductAmount{
-    currentAmount:number;
-    maxAmount=1000;
 
-    constructor(currentAmount: number)
-    {
-        this.currentAmount=currentAmount;
+    saleProduct(){
+        this.isAvailable=false;
+    }
+
+
+    changePrice(newPrice:number){
+        this.price=newPrice;
     }
 }
-
 
